@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html style="height:100%; width:100%;">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A description of the page">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <title>Jordan's Portfolio</title>
+        <base href="https://example.com/page.html">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body id="gradient" style="height:100%; width:100%;">
+        <ul class="nav">
+            <li class="lNav"><a class="aNav" style="border-radius: 25px 0px 0px 25px;" href="file.html">HOME</a></li>
+            <li class="lNav"><a class="aNav" href="file.html">ABOUT</a></li>
+            <li class="lNav"><a class="aNav" style="border-radius: 0px 25px 25px 0px;" href="file.html">CONTACT</a></li>
+        </ul>
+        <br>
+        <h1>Welcome!</h1>
+        <p>This is a test paragraph...</p>
+    </body>
+    <style>
+        html {
+            margin: -10px;
+            background-color: #ccc;
+            text-align: center;
+            font-family: 'Quicksand';
+        }
+
+        h1 {
+            text-shadow: 2px 2px #558ABB;
+        }
+        
+        .nav {
+            list-style-type: none;
+            margin: 0px;
+            padding: 5px;
+        }
+
+        .lNav {
+            display: inline;
+            float: left;
+        }
+
+        .aNav {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 8px;
+            background-color: #558ABB;
+            border-color: black; border-style: solid;
+        }
+
+        .lNav a:hover {
+            background-color: #6ba4d9;
+        }
+
+        #gradient
+        {
+            background: linear-gradient(140deg, #558ABB, #ddd);
+            background-size: 200% 200%;
+
+            -webkit-animation: Animation 10s ease infinite;
+            -moz-animation: Animation 10s ease infinite;
+            animation: Animation 10s ease infinite;
+        }
+
+        @-webkit-keyframes Animation {
+            0%{background-position:10% 0%}
+            50%{background-position:91% 100%}
+            100%{background-position:10% 0%}
+        }
+        @-moz-keyframes Animation {
+            0%{background-position:10% 0%}
+            50%{background-position:91% 100%}
+            100%{background-position:10% 0%}
+        }
+        @keyframes Animation { 
+            0%{background-position:10% 0%}
+            50%{background-position:91% 100%}
+            100%{background-position:10% 0%}
+        }
+    </style>
+</html>
